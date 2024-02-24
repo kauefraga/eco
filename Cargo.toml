@@ -2,6 +2,11 @@
 name = "eco"
 version = "0.1.0"
 edition = "2021"
+authors = ["Kauê Fraga Rodrigues"]
+description = "🔊 Uma implementação em Rust do comando echo"
+license = "MIT"
+keywords = ["echo", "cli"]
+repository = "https://github.com/kauefraga/eco"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
