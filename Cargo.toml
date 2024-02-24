@@ -10,3 +10,4 @@ keywords = ["echo", "cli"]
 repository = "https://github.com/kauefraga/eco"
 
 [dependencies]
+console = { version = "0.15.8", features = ["windows-console-colors"] }
