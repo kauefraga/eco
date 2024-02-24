@@ -24,6 +24,16 @@ Sobre as funcionalidades:
 
 ## ⬇ Como instalar e usar
 
+Se você tem o acesso à ferramenta Cargo, então execute: `cargo install eco-rs`. Caso você não tenha o Cargo instalado, sinto muito, ainda não estou distribuindo os executáveis.
+
+Veja abaixo um exemplo de uso:
+
+```bash
+eco-rs "Olá, mundo!" # Saída: Olá, mundo!
+eco-rs Olá, mundo!   # Olá, mundo!
+eco-rs "Olá," mundo! # Olá, mundo!
+```
+
 ## ✨ O que melhorar e contribuições
 
 Esta seção é dedicada para descrever o que pode ser melhorado atualmente no projeto como um todo. O que for feito, será removido da lista.
