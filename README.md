@@ -40,6 +40,7 @@ Esta seção é dedicada para descrever o que pode ser melhorado atualmente no p
 
 - Documentação: uma documentação sobre como a solução foi implementada.
 - Documentação: uma seção sobre a sintaxe de marcação de estilos.
+- Aplicação: adicionar modo interativo para `eco`.
 
 Fique à vontade para abrir um Pull Request adicionando melhorias na lista acima ou alterando o código-fonte diretamente. Outra opção é abrir uma issue solicitando melhorias ou correções de bugs.
 
