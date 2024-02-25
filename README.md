@@ -18,11 +18,7 @@ Sobre as funcionalidades:
 
 - [x] Compatível com o `echo`. Nesse caso, implementa grande parte das funcionalidades do programa/comando.
 - [x] Veloz e portável.
-- [ ] Cores por todos os lados.
-  - [x] Palavras específicas serão coloridas automaticamente.
-  - [ ] Sintaxe própria para marcação dos estilos. Similar a biblioteca RICH do Python.
-
-Atualmente, apenas a palavra "rust" está sendo colorida em vermelho.
+- [x] Palavra "rust" é colorida em vermelho.
 
 ## ⬇ Como instalar e usar
 
@@ -40,11 +36,15 @@ eco-rs "Olá," mundo! # Olá, mundo!
 
 Esta seção é dedicada para descrever o que pode ser melhorado atualmente no projeto como um todo. O que for feito, será removido da lista.
 
-- Documentação: uma documentação sobre como a solução foi implementada.
-- Documentação: uma seção sobre a sintaxe de marcação de estilos.
-- Aplicação: adicionar modo interativo para `eco`.
-
 Fique à vontade para abrir um Pull Request adicionando melhorias na lista acima ou alterando o código-fonte diretamente. Outra opção é abrir uma issue solicitando melhorias ou correções de bugs.
+
+## 🌳 Interações
+
+- [Idealização do projeto](https://twitter.com/rkauefraga/status/1760814049065832789)
+- [Sobre escrever uma thread](https://twitter.com/rkauefraga/status/1760826297175953810)
+- [Distribuição no crates.io](https://twitter.com/rkauefraga/status/1761207277674012702)
+- [Thread sobre o projeto](https://twitter.com/rkauefraga/status/1761391229986599342)
+- [Verificação para colorir a palavra "rust"](https://twitter.com/rkauefraga/status/1761550454880633278)
 
 ## 📝 Licença
 
