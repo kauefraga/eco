@@ -1,4 +1,4 @@
-use std::env;
+use std::{env, fs};
 use std::process::exit;
 
 use console::style;
@@ -9,10 +9,11 @@ fn main() {
     let mut args = env::args();
     args.next(); // skip first argument (executable)
 
+    // second argument (filepath or help menu)
     match args.next() {
-        Some(a) => {
+        Some(arg) => {
             let is_help_needed = env::args().len() == 2
-                && (a == "-h" || a == "--help");
+                && (arg == "-h" || arg == "--help");
             if is_help_needed {
                 println!("{}", format!(
                     "{}: eco-rs bom dia! {}",
@@ -22,7 +23,15 @@ fn main() {
                 exit(0);
             }
 
-            output.push_str(&format!("{a} "));
+            match fs::read_to_string(&arg) {
+                Ok(text) => {
+                    println!("{}", text);
+                    return
+                },
+                Err(_) => {},
+            }
+
+            output.push_str(&format!("{arg} "));
         },
         None => {
             println!("");
