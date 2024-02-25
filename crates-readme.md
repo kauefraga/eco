@@ -18,8 +18,10 @@ Sobre as funcionalidades:
 - [x] Compatível com o `echo`. Nesse caso, implementa grande parte das funcionalidades do programa/comando.
 - [x] Veloz e portável.
 - [ ] Cores por todos os lados.
-  - [ ] Palavras específicas serão coloridas automaticamente.
+  - [x] Palavras específicas serão coloridas automaticamente.
   - [ ] Sintaxe própria para marcação dos estilos. Similar a biblioteca RICH do Python.
+
+Atualmente, apenas a palavra "rust" está sendo colorida em vermelho.
 
 ## ⬇ Como instalar e usar
 
