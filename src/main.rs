@@ -1,28 +1,30 @@
-use std::collections::VecDeque;
 use std::env;
 use std::process::exit;
 
 use console::style;
 
 fn main() {
-    let mut args: VecDeque<String> = env::args().collect();
-
-    args.pop_front();
-
-    let is_help_needed = args.len() == 1
-        && (args[0] == "-h" || args[0] == "--help");
-    if is_help_needed {
-        println!("{}", format!(
-            "{}: eco-rs bom dia! {}",
-            style("Example").green(),
-            style("// bom dia!").dim()
-        ));
-        exit(0);
-    }
-
     let mut output = String::new();
+    let mut args_counter = 0;
 
-    for arg in args {
+    for arg in env::args() {
+        // Skip the first arg (executable)
+        if args_counter == 0 {
+            args_counter += 1;
+            continue;
+        }
+
+        let is_help_needed = env::args().len() == 2
+            && (arg == "-h" || arg == "--help");
+        if is_help_needed {
+            println!("{}", format!(
+                "{}: eco-rs bom dia! {}",
+                style("Example").green(),
+                style("// bom dia!").dim()
+            ));
+            exit(0);
+        }
+
         if arg.to_lowercase().contains("rust") {
             arg.split(' ').for_each(|word| {
                 if word.to_lowercase().contains("rust") {
@@ -38,7 +40,8 @@ fn main() {
         }
 
         output.push_str(&format!("{arg} "));
+        args_counter += 1;
     }
 
-    println!("{}", output.trim());
+    println!("{}", output.trim())
 }
