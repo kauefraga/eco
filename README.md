@@ -18,7 +18,7 @@ Sobre as funcionalidades:
 
 - [x] Compatível com o `echo`. Nesse caso, implementa grande parte das funcionalidades do programa/comando.
 - [x] Veloz e portável.
-- [x] Palavra "rust" é colorida em vermelho.
+- [x] Capacidade de ler um arquivo.
 
 ## ⬇ Como instalar e usar
 
@@ -27,9 +27,9 @@ Se você tem o acesso à ferramenta Cargo, então execute: `cargo install eco-rs
 Veja abaixo um exemplo de uso:
 
 ```bash
-eco-rs "Olá, mundo!" # Saída: Olá, mundo!
-eco-rs Olá, mundo!   # Olá, mundo!
-eco-rs "Olá," mundo! # Olá, mundo!
+eco-rs Olá, mundo!       # Saída: Olá, mundo!
+eco-rs Olá, Rustáceos!   # Olá, Rustáceos! (Rustáceos! estará em vermelho)
+eco-rs teste.txt         # ...
 ```
 
 ## ✨ O que melhorar e contribuições
@@ -45,6 +45,8 @@ Fique à vontade para abrir um Pull Request adicionando melhorias na lista acima
 - [Distribuição no crates.io](https://twitter.com/rkauefraga/status/1761207277674012702)
 - [Thread sobre o projeto](https://twitter.com/rkauefraga/status/1761391229986599342)
 - [Verificação para colorir a palavra "rust"](https://twitter.com/rkauefraga/status/1761550454880633278)
+- [Publicação no TabNews](https://www.tabnews.com.br/kauefraga/eco-minha-implementacao-em-rust-do-programa-echo)
+- [Publicação no DevTo](https://dev.to/kauefraga/eco-minha-implementacao-em-rust-do-programa-echo-34jh)
 
 ## 📝 Licença
 
